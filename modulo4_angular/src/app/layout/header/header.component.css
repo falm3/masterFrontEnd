@@ -1,0 +1,8 @@
+.title{
+  font-size: 2rem;
+  display: flex;
+  align-content: center;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}

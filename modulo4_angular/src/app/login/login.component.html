@@ -1,0 +1,22 @@
+
+<div>
+  <h1>Login</h1>
+  <form [formGroup]="loginForm">
+    <mat-form-field hintLabel="Enter your user name">
+      <mat-label>Username</mat-label>
+      <input formControlName="username" matInput #input placeholder="Enter your user name">
+      <mat-error *ngIf="loginForm.get('username')?.hasError('required')">Username is required</mat-error>
+    </mat-form-field>
+    <mat-form-field hintLabel="Enter your password">
+      <mat-label>Password</mat-label>
+      <input formControlName="password" matInput #input placeholder="Enter your password">
+      <mat-error *ngIf="loginForm.get('password')?.hasError('required')">Password is required</mat-error>
+    </mat-form-field>
+    <p>
+      <button type="button" mat-flat-button color="primary" (click)="login()">Login</button>
+    </p>
+  </form>
+  <p>
+    <b>*Valid credentials:</b> Username:<em>master&#64;lemoncode.net</em> - Password:<em>12345678</em>
+  </p>
+</div>
