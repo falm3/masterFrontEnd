@@ -1,0 +1,68 @@
+@use "sass:map";
+
+$color-texto: #fff;
+
+@function obtener-color($indice) {
+  $colores: (
+    1: red,
+    2: blue,
+    3: green,
+  );
+@return map.get($colores, $indice);
+}
+
+@mixin claro($fondo, $texto) {
+  @for $i from 1 through 4 {
+    &.lighten-#{$i} {
+      background-color: lighten($fondo, (8% * $i));
+
+      .color-box-text {
+        color: darken($texto, (25% * $i));
+      }
+    }
+  }
+}
+
+@mixin oscuro($fondo, $texto) {
+  @for $i from 1 through 4 {
+    &.darken-#{$i} {
+      background-color: darken($fondo, (9% * $i));
+
+      .color-box-text {
+        color: lighten($texto, (20% * $i));
+      }
+    }
+  }
+}
+
+@mixin color-base($indice, $texto) {
+  &.base-color {
+    background-color: obtener-color($indice);
+    .color-box-text {
+      color: $texto;
+    }
+    width: 120px;;
+  }
+}
+
+@for $indice from 1 through 3 {
+  .container-#{$indice} {
+    display: inline-grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: 100px;
+    gap: 5px;
+    margin-bottom: 5px;
+    .box {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 10px;
+      @include color-base($indice, $color-texto);
+      @for $i from 1 through 4 {
+        @include oscuro(obtener-color($indice), $color-texto);
+        @include claro(obtener-color($indice), $color-texto);
+      }
+    }
+  }
+}
+

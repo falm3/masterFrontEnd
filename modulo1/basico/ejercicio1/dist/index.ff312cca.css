@@ -1,0 +1,265 @@
+.container-1 {
+  grid-template-rows: 100px;
+  grid-template-columns: repeat(9, 1fr);
+  gap: 5px;
+  margin-bottom: 5px;
+  display: inline-grid;
+}
+
+.container-1 .box {
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.container-1 .box.base-color {
+  background-color: red;
+  width: 120px;
+}
+
+.container-1 .box.base-color .color-box-text {
+  color: #fff;
+}
+
+.container-1 .box.darken-1 {
+  background-color: #d10000;
+}
+
+.container-1 .box.darken-1 .color-box-text {
+  color: #fff;
+}
+
+.container-1 .box.darken-2 {
+  background-color: #a30000;
+}
+
+.container-1 .box.darken-2 .color-box-text {
+  color: #fff;
+}
+
+.container-1 .box.darken-3 {
+  background-color: #750000;
+}
+
+.container-1 .box.darken-3 .color-box-text {
+  color: #fff;
+}
+
+.container-1 .box.darken-4 {
+  background-color: #470000;
+}
+
+.container-1 .box.darken-4 .color-box-text {
+  color: #fff;
+}
+
+.container-1 .box.lighten-1 {
+  background-color: #ff2929;
+}
+
+.container-1 .box.lighten-1 .color-box-text {
+  color: #bfbfbf;
+}
+
+.container-1 .box.lighten-2 {
+  background-color: #ff5252;
+}
+
+.container-1 .box.lighten-2 .color-box-text {
+  color: gray;
+}
+
+.container-1 .box.lighten-3 {
+  background-color: #ff7a7a;
+}
+
+.container-1 .box.lighten-3 .color-box-text {
+  color: #404040;
+}
+
+.container-1 .box.lighten-4 {
+  background-color: #ffa3a3;
+}
+
+.container-1 .box.lighten-4 .color-box-text {
+  color: #000;
+}
+
+.container-2 {
+  grid-template-rows: 100px;
+  grid-template-columns: repeat(9, 1fr);
+  gap: 5px;
+  margin-bottom: 5px;
+  display: inline-grid;
+}
+
+.container-2 .box {
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.container-2 .box.base-color {
+  background-color: #00f;
+  width: 120px;
+}
+
+.container-2 .box.base-color .color-box-text {
+  color: #fff;
+}
+
+.container-2 .box.darken-1 {
+  background-color: #0000d1;
+}
+
+.container-2 .box.darken-1 .color-box-text {
+  color: #fff;
+}
+
+.container-2 .box.darken-2 {
+  background-color: #0000a3;
+}
+
+.container-2 .box.darken-2 .color-box-text {
+  color: #fff;
+}
+
+.container-2 .box.darken-3 {
+  background-color: #000075;
+}
+
+.container-2 .box.darken-3 .color-box-text {
+  color: #fff;
+}
+
+.container-2 .box.darken-4 {
+  background-color: #000047;
+}
+
+.container-2 .box.darken-4 .color-box-text {
+  color: #fff;
+}
+
+.container-2 .box.lighten-1 {
+  background-color: #2929ff;
+}
+
+.container-2 .box.lighten-1 .color-box-text {
+  color: #bfbfbf;
+}
+
+.container-2 .box.lighten-2 {
+  background-color: #5252ff;
+}
+
+.container-2 .box.lighten-2 .color-box-text {
+  color: gray;
+}
+
+.container-2 .box.lighten-3 {
+  background-color: #7a7aff;
+}
+
+.container-2 .box.lighten-3 .color-box-text {
+  color: #404040;
+}
+
+.container-2 .box.lighten-4 {
+  background-color: #a3a3ff;
+}
+
+.container-2 .box.lighten-4 .color-box-text {
+  color: #000;
+}
+
+.container-3 {
+  grid-template-rows: 100px;
+  grid-template-columns: repeat(9, 1fr);
+  gap: 5px;
+  margin-bottom: 5px;
+  display: inline-grid;
+}
+
+.container-3 .box {
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.container-3 .box.base-color {
+  background-color: green;
+  width: 120px;
+}
+
+.container-3 .box.base-color .color-box-text {
+  color: #fff;
+}
+
+.container-3 .box.darken-1 {
+  background-color: #005200;
+}
+
+.container-3 .box.darken-1 .color-box-text {
+  color: #fff;
+}
+
+.container-3 .box.darken-2 {
+  background-color: #002400;
+}
+
+.container-3 .box.darken-2 .color-box-text {
+  color: #fff;
+}
+
+.container-3 .box.darken-3 {
+  background-color: #000;
+}
+
+.container-3 .box.darken-3 .color-box-text {
+  color: #fff;
+}
+
+.container-3 .box.darken-4 {
+  background-color: #000;
+}
+
+.container-3 .box.darken-4 .color-box-text {
+  color: #fff;
+}
+
+.container-3 .box.lighten-1 {
+  background-color: #00a900;
+}
+
+.container-3 .box.lighten-1 .color-box-text {
+  color: #bfbfbf;
+}
+
+.container-3 .box.lighten-2 {
+  background-color: #00d200;
+}
+
+.container-3 .box.lighten-2 .color-box-text {
+  color: gray;
+}
+
+.container-3 .box.lighten-3 {
+  background-color: #00fa00;
+}
+
+.container-3 .box.lighten-3 .color-box-text {
+  color: #404040;
+}
+
+.container-3 .box.lighten-4 {
+  background-color: #24ff24;
+}
+
+.container-3 .box.lighten-4 .color-box-text {
+  color: #000;
+}
+
+/*# sourceMappingURL=index.ff312cca.css.map */

@@ -1,0 +1,51 @@
+/**variables globales*/
+:root{
+	--azul: blue;
+	--marino: darkblue;
+	--espacio: 20px;
+
+}
+
+body {
+	padding: 0;
+	height: 100vh;
+}
+.cabecera {
+	margin: var(--espacio) 0;
+	font-size: 1.50rem;
+	font-family: sans-serif;
+	font-weight: 800;
+}
+.menu {
+	justify-content: space-between;
+	display: flex;
+	flex-direction: row;
+	background-color: var(--marino);
+}
+.item {
+	padding: var(--espacio);
+	background-color: var(--marino);
+	&:hover{
+		background-color: var(--azul);
+	}
+}
+a{
+	font-family: sans-serif;
+	text-decoration: none;
+	color: #FFF;
+	font-weight: bold;
+}
+@media screen and (max-width:640px) {
+	.menu{
+		flex-direction: column;
+		align-items: stretch;
+		display: flex;
+		.item{
+			display: flex;
+			justify-content: center;
+		}
+	}
+	.cabecera {
+		font-size: 2rem;
+	}
+}
