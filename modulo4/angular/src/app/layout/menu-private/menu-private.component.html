@@ -1,0 +1,6 @@
+  <button mat-button routerLinkActive="selected" routerLink="/dashboard">Dashboard</button>
+  <button mat-button routerLinkActive="selected" routerLink="/gallery">Gallery</button>
+  <button mat-button routerLinkActive="selected" routerLink="/users">Crud</button>
+  <button mat-button routerLinkActive="selected" routerLink="/profile">Profile</button>
+  <button mat-button *ngIf="isLogged()" routerLink="/login" (click)="logout()">Logout</button>
+  <span *ngIf="isLogged()">{{ name }}</span>

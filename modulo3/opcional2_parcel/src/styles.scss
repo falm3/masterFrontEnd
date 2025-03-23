@@ -1,0 +1,9 @@
+$myColor: orange; 
+.mycolor {
+ background-color: $myColor;
+}
+
+#imgContainer > img{
+  width: 100px;
+  margin: 100px;
+}

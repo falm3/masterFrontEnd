@@ -1,0 +1,57 @@
+@use "tema_a" as *; //para usar tema b cambiar por @use "tema_b" as *
+/**variables globales*/
+:root{
+	--rojo: red;
+	--marron: brown;
+	--rosa: pink;
+	--azul: blue;
+	--marino: darkblue;
+	--celeste: cyan;
+	--negro: black;
+	--padding: 25px;
+	--less: 25px;
+	--normal: 30px;
+	--more: 50px;
+}
+body{
+	margin: 0;
+	padding: 0;
+	width: 100vw;
+	height: 100vh;
+}
+
+.container{
+	padding-top: 100px;
+	display: flex;
+	flex-direction: column;
+  align-items: center;
+	font-family: $principal-font-family;
+
+	.base, .important, .warning, .box{
+		width: 300px;
+		display: flex;
+		padding: var(--padding);
+		border: 1 solid black;
+	}
+	.base{
+		background-color: $primario;
+	}
+	.important{
+		background-color: $importante;
+	}
+	.warning{
+		background-color: $warning;
+	}
+	.principal{
+		font-family: $principal-font-family;
+		font-size: $principal-font-size;
+	}
+	.secondary{
+		font-family: $secondary-font-family;
+		font-size: $secondary-font-size;
+	}
+	.box{
+		box-shadow: $box-shadow;
+		border-radius: $border-rad;
+	}
+}

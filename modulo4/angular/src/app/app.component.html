@@ -1,0 +1,12 @@
+
+<div class="center">
+  <app-header></app-header>
+  <app-menu></app-menu>
+  <app-menu-private *ngIf="isLogged()"></app-menu-private>
+</div>
+<div class="center">
+  <router-outlet></router-outlet>
+</div>
+<div class="footer">
+  <app-footer></app-footer>
+</div>

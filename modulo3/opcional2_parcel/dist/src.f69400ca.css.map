@@ -1,0 +1,1 @@
+{"version":3,"sources":["styles.scss"],"names":[],"mappings":"AACA;EACC,wBAFS;;;AAKV;EACE,YAAA;EACA,aAAA","file":"src.f69400ca.css","sourceRoot":"../src","sourcesContent":["$myColor: orange; \n.mycolor {\n background-color: $myColor;\n}\n\n#imgContainer > img{\n  width: 100px;\n  margin: 100px;\n}\n"]}
